@@ -16,16 +16,16 @@ The latter is the [`/data-service`](/MQTTapp/data-service), which is responsible
 - Api Key from  [`openweathermap API`](https://openweathermap.org/) to perform calls
 
 > [!IMPORTANT]
-> In the [`/publisher`](/MQTTapp/publisher) microservice in this repo is missing an application-properties text file, conveniently ignored since it accommodates the value of the api Key that is supposed to remain confidential.
-> The file have to be putted inside of a `resources`, folder.
-> Each of the microservices must have this type of folder hosting the application.properties file.
+> In the [`/publisher`](/MQTTapp/publisher) microservice in this repo is missing an `application-properties` text file, conveniently ignored since it accommodates the value of the api Key that is supposed to remain confidential.
+> The file have to be putted inside of a `/resources`, folder.
+> Each of the microservices must have this type of folder hosting the `application.properties` file.
 > example:
-> The path for the application.properties file in the [`publisher`](/MQTTapp/publisher) microservice will be of this type
+> The path for the `application.properties` file in the [`publisher`](/MQTTapp/publisher) microservice will be of this type
 > 
 ```cmd
 C:publisher\src\main\java\org\acme\pub\resources> 
 ```
-> To correctly set the `application.property` file for the [`/publisher`](/MQTTapp/publisher) microservice insert the following configurations:
+> To correctly set the `application.properties` file for the [`/publisher`](/MQTTapp/publisher) microservice insert the following configurations:
 ```cmd
 # Scheduler Configs
 openweathermap.api.key: the_api_key_provided
