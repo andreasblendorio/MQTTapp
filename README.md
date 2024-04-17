@@ -17,9 +17,10 @@ The latter is the [`data-service`](/MQTTapp/data-service), which is responsible 
 
 > [!IMPORTANT]
 > In each of the microservices in this repo is missing an application-properties text file, conveniently ignored since it accommodates the value of the api Key that is supposed to remain confidential.
-> The file have to be putted inside of a [`resources`], folder.
+> The file have to be putted inside of a `resources`, folder.
 > Each of them must have this type of folder hosting the application.properties file.
 > example:
+> The path for the application.properties file in the [`publisher`](/MQTTapp/publisher) microservice will be of this type
 ```cmd
-C:\path\to\your\workingdir\> 
+C:publisher\src\main\java\org\acme\pub> 
 ```
