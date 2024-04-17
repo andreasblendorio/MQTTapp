@@ -1,5 +1,6 @@
 package org.acme.dataservice.data;
 
+import jakarta.inject.Singleton;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
@@ -15,18 +16,22 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 import java.util.ArrayList;
 import java.util.List;
 
-@ApplicationScoped
+@Singleton
+//@ApplicationScoped
 public class dataService {
-           
+    
+    // DB client
     private MongoClient mongoClient;
+    // DB instance
     private MongoDatabase database;
+    // DB collection
     private MongoCollection<Document> collection;
      
     // Init
     @Inject
-    public dataService(@ConfigProperty(name = "mongodb.connection-string") String connectionString,
-                       @ConfigProperty(name = "mongodb.database-name") String databaseName,
-                       @ConfigProperty(name = "mongodb.collection-name") String collectionName) {
+    public dataService(@ConfigProperty(name = "quarkus.mongodb.connection-string") String connectionString,
+                       @ConfigProperty(name = "quarkus.mongodb.database-name") String databaseName,
+                       @ConfigProperty(name = "quarkus.mongodb.collection-name") String collectionName) {
       this.mongoClient = MongoClients.create(connectionString);
       this.database = mongoClient.getDatabase(databaseName);
       this.collection = database.getCollection(collectionName);
