@@ -13,3 +13,7 @@ The latter is the [`data-service`](/MQTTapp/data-service), which is responsible 
 - Mosquitto (or any equivalent MQTT broker)
 - MQTT Explorer (Optional, to explore the broker while messages are published)
 - MongoDB
+- Api Key from  [`openweathermap API`](https://openweathermap.org/) to perform calls
+
+> [!IMPORTANT]
+> In each of the microservices in this repo is missing an application-properties text file, conveniently ignored since it accommodates the value of the api Key that is supposed to remain confidential.
