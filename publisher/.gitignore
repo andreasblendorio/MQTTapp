@@ -42,5 +42,4 @@ nb-configuration.xml
 # Plugin directory
 /.quarkus/cli/plugins/
 
-# App properties
-application.properties
+
