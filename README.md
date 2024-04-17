@@ -20,7 +20,7 @@ The latter is the [`/data-service`](/MQTTapp/data-service), which is responsible
 > The file have to be putted inside of a `/resources`, folder.
 > Each of the microservices must have this type of folder hosting the `application.properties` file.
 > example:
-> The path for the `application.properties` file in the [`publisher`](/MQTTapp/publisher) microservice will be of this type
+> The path for the `application.properties` file in the [`/publisher`](/MQTTapp/publisher) microservice will be of this type
 > 
 ```cmd
 C:publisher\src\main\java\org\acme\pub\resources> 
