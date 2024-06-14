@@ -20,7 +20,7 @@ public class MQTTpublisher {
     //private String mqttTopic;
     
     // MQTT borker address
-    private static final String MQTT_BROKER = "tcp://localhost:1883"; 
+    private static final String MQTT_BROKER = "tcp://host.docker.internal:1883"; 
     // Topic to publish weather-data
     private static final String TOPIC = "weather-data"; 
     // MQTT client ID 
