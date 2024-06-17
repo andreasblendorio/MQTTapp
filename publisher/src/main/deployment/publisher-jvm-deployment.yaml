@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: publisher
+  template:
+    metadata:
+      labels:
+        app: publisher
+    spec:
+      containers:
+      - name: publisher
+        image: andrewsb280/publisher-jvm:latest
+        env:
+        - name: MQTT_BROKER
+          value: tcp://mosquitto-service:1883  
+        ports:
+        - containerPort: 8090

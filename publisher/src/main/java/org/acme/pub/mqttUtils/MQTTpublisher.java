@@ -19,8 +19,8 @@ public class MQTTpublisher {
     //@ConfigProperty(name = "mqtt.topic")
     //private String mqttTopic;
     
-    // MQTT borker address
-    private static final String MQTT_BROKER = "tcp://host.docker.internal:1883"; 
+    // MQTT broker address
+    private static final String MQTT_BROKER = "tcp://mosquitto-service:1883"; 
     // Topic to publish weather-data
     private static final String TOPIC = "weather-data"; 
     // MQTT client ID 

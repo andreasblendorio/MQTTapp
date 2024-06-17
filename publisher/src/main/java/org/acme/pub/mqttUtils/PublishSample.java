@@ -11,7 +11,7 @@ public class PublishSample {
    // Main entry point
    public static void main(String[] args) {
 
-       String broker = "tcp://host.docker.internal:1883";
+       String broker = "tcp://10.100.115.185:1883";
        String topic = "mqtt/test";
        String username = "emqx";
        String password = "public";
