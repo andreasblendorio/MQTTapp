@@ -16,7 +16,9 @@ spec:
       - name: publisher
         image: andrewsb280/publisher-jvm:latest
         env:
-        - name: MQTT_BROKER
-          value: tcp://mosquitto-service:1883  
+        - name: MOSQUITTO_HOST
+          value: "mosquitto-service"  
+        - name: MQTT_TOPIC
+          value: "weather-data"
         ports:
-        - containerPort: 8090
+        - containerPort: 8080
