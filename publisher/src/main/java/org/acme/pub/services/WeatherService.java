@@ -3,14 +3,11 @@ package org.acme.pub.services;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import org.jboss.logging.Logger;
-
 import org.acme.pub.mqttUtils.MQTTpublisher;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import io.quarkus.scheduler.Scheduled;
-
 import java.util.List;
 import java.util.Arrays;
-
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.core.MediaType;

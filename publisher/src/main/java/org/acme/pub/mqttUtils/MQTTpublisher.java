@@ -2,7 +2,6 @@ package org.acme.pub.mqttUtils;
 
 import jakarta.inject.Singleton;
 import org.jboss.logging.Logger;
-
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
