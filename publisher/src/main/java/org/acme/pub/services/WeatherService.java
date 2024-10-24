@@ -86,7 +86,7 @@ public class WeatherService {
     /**
      * An Hardcoded solution
      * may be provided by manually defining the api_key & api_URL values
-     * private static final String API_KEY = "43f690f3199a59d0291e0aff041540c6";
+     * private static final String API_KEY = "43f690f3199a59d0291e*****41540c6";
      * private static final String API_URL = "http://api.openweathermap.org/data/2.5/weather?q=London&appid=" + API_KEY;
      */
 
